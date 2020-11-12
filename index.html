@@ -14,12 +14,13 @@
                 overflow: scroll;
                 margin: 10;
                 padding: 10;
-                font-family: sans-serif;
-                color: rgb(238, 79, 87);
-                background-color: rgba(14, 13, 13, 0.116);
+                font-family: Arial, Helvetica,"Times New Roman", sans-serif;
+                color: rgb(17, 17, 17);
+                
             }
+        /* INTRO SECTION STARTS HERE */
             .Intro{
-                background-image: url(background.jpg);
+                background-color: rgba(10, 103, 180, 0.24);
                 max-width: 100%;
                 height:auto;
                 position: relative;
@@ -33,9 +34,104 @@
                 text-align: center;
             }
             .Intro address{
+
                 position: relative;
                 text-align: center;
             }
+        /* INTRO SECTION STARTS HERE */
+            hr{
+                border-top: 2px solid  rgb(0, 0, 0);
+            }
+        /* SKILLS SECTION STARTS HERE */
+            .Skills{
+                background-color: #EFE2BA;
+                max-width: 100%;
+                height:auto;
+                position: relative;
+                top:50%;
+                left: 0%;
+                overflow: hidden;
+                font-family: Roboto;
+            }
+            .Skills #Skillsbar {
+                width: 500px;
+                margin: 10px auto 0;
+            }
+            .Skills h4{
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(12, 2, 2);
+                text-align: center;
+            }
+            .Skills li{
+                position: relative;
+                list-style: none;
+                margin: 50px 0;
+                font-weight: 550;
+            }
+            .Skills li:before{
+                content: "";
+                position: absolute;
+                top: calc(100% + 10px);
+                left: 0;
+                width: 100%;
+                height: 15px;
+                background-color: rgb(255, 166, 0, .5);
+                border-radius: 1000px;
+            }
+            .Skills li:after{
+                content: "";
+                position: absolute;
+                top: calc(100% + 10px);
+                left: 0;
+                width: 0;
+                height: 15px;
+                background-color: rgb(255, 166, 0, 1);
+                border-radius: 1000px;
+                animation-duration: 1s;
+                animation-timing-function: ease-in;
+                animation-fill-mode: forwards;
+            }
+            .Skills li.Python::after{
+                animation-name: Python;
+            }
+            @keyframes Python {
+                to{
+                    width: 90%;
+                }
+            }
+            .Skills li.Cpp::after{
+                animation-name: Cpp;
+            }
+            @keyframes Cpp {
+                to{
+                    width: 85%;
+                }
+            }
+            .Skills li.Java::after{
+                animation-name: Java;
+            }
+            @keyframes Java {
+                to{
+                    width: 65%;
+                }
+            }
+            .Skills li.Django::after{
+                animation-name: Django;
+            }
+            @keyframes Django {
+                to{
+                    width: 60%;
+                }
+            }
+            .Skills li.HTML::after{
+                animation-name: HTML;
+            }
+            @keyframes HTML {
+                to{
+                    width: 70%;
+                }
+            }
+        /* SKILLS SECTION ENDS HERE */
         </style>
     </head>
 <body>
@@ -45,6 +141,7 @@
             ADITYA SONANI
         </h1>
         <address>
+            PROFILES - &nbsp;
             <a href="https://www.linkedin.com/in/aditya-sonani-13309a1b5" target="_blank">
                 <img border="0" alt="LinkedIn" src="linkedinlogo.png" width="30" height="30">
             </a>
@@ -67,7 +164,25 @@
             </a>
         </address>
     </div>
+    <hr>
     <!-- INTRO SECTION ENDS HERE -->
-    
+
+    <!-- SKILLS SECTION BEGINS HERE -->
+    <div class="Skills">
+        <h4>
+            SKILLS
+        </h4>
+        <div id="Skillsbar">
+            <ul>
+                <li class="Python"> PYTHON </li>
+                <li class="Cpp"> C/C++ </li>
+                <li class="Java"> JAVA </li>
+                <li class="Django"> DJANGO PYTHON </li>
+                <li class="HTML"> HTML/CSS </li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <!-- SKILLS SECTION ENDS HERE -->
 </body>
 </html>
