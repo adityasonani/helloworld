@@ -1,0 +1,15 @@
+body
+{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.Intro{
+    position: absolute;
+    top:50%;
+	left: 50%;
+}
