@@ -2,13 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width" initial-scale=1.0">
+        <meta name="viewport" content="width=device-width" initial-scale=1.0 maximum-scale=1.0 user-scalable=no" >
         <title>
             ADITYA SONANI'S CV
         </title>
         <link rel = "icon" href = "titlelogo.png" type = "image/x-icon"> 
         <!-- <link rel="stylesheets" href="style.css" type="text/css"> -->
-        <style>
+        <style>             
             body
             {
                 overflow: scroll;
@@ -16,8 +16,10 @@
                 padding: 10;
                 font-family: Arial, Helvetica,"Times New Roman", sans-serif;
                 color: rgb(17, 17, 17);
-                
             }
+            html {
+                scroll-behavior: smooth;
+            } 
         /* INTRO SECTION STARTS HERE */
             .Intro{
                 background-color: rgba(10, 103, 180, 0.24);
@@ -34,11 +36,10 @@
                 text-align: center;
             }
             .Intro address{
-
                 position: relative;
                 text-align: center;
             }
-        /* INTRO SECTION STARTS HERE */
+        /* INTRO SECTION ENDS HERE */
             hr{
                 border-top: 2px solid  rgb(0, 0, 0);
             }
@@ -54,7 +55,8 @@
                 font-family: Roboto;
             }
             .Skills #Skillsbar {
-                width: 500px;
+                max-width: 500px;
+                height: auto;
                 margin: 10px auto 0;
             }
             .Skills h4{
@@ -132,6 +134,42 @@
                 }
             }
         /* SKILLS SECTION ENDS HERE */
+        
+        /* EDUCATION SECTION BEGINS HERE */
+        .Education{
+            background-color: #8ee98b94;
+            /*ackground-color: rgba(233, 59, 117, 0.26);*/
+            max-width: 100%;
+            height:auto;
+            position: relative;
+            top:50%;
+            left: 0%;
+            overflow: hidden;
+            font-family: Roboto;
+        }
+        .Education h4{
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(12, 2, 2);
+            text-align: center;
+        }
+        .Education #date1{
+            position: relative;
+            margin: 10px 0;
+            text-align:center;
+        }
+        .Education #college{
+            position: relative;
+            margin: 10px 0;
+            text-align:center;
+            font-weight: 550;
+        }
+        .Education #course{
+            position: relative;
+            margin: 10px 0;
+            text-align: center;
+        }
+        /* EDUCATION SECTION ENDS HERE */
+
         </style>
     </head>
 <body>
@@ -142,24 +180,24 @@
         </h1>
         <address>
             PROFILES - &nbsp;
-            <a href="https://www.linkedin.com/in/aditya-sonani-13309a1b5" target="_blank">
+            <a href="https://www.linkedin.com/in/aditya-sonani-13309a1b5" target="_blank" title="LinkedIn">
                 <img border="0" alt="LinkedIn" src="linkedinlogo.png" width="30" height="30">
             </a>
             &nbsp;&nbsp;
-            <a href="https://www.codechef.com/users/adityasonani" target="_blank">
+            <a href="https://www.codechef.com/users/adityasonani" target="_blank" title="CodeChef">
                 <img border="0" alt="CodeChef" src="cclogo.png" width="130" height="40">
             </a>
             &nbsp;&nbsp;
-            <a href="https://www.codeforces.com/profile/AdityaSonani472" target="_blank">
+            <a href="https://www.codeforces.com/profile/AdityaSonani472" target="_blank" title="CodeForces">
                 <img border="0" alt="CodeForces" src="cflogo.png" width="130" height="35">
             </a></p>
 
             <p> Contact - 
-            <a href="tel:+91934542018">+91934542018</a>
+            <a href="tel:+91934542018" title="Mobile No.">+91934542018</a>
             &nbsp;&nbsp;
             or
             &nbsp;&nbsp;
-            <a href="mailto: adityasonani20@gmail.com" target="_blank">
+            <a href="mailto: adityasonani20@gmail.com" target="_blank" title="Mail">
                 <img border="0" alt="G-Mail" src="gmaillogo.png" width="20" height="20">
             </a>
         </address>
@@ -184,5 +222,45 @@
     </div>
     <hr>
     <!-- SKILLS SECTION ENDS HERE -->
+
+    <!-- EDUCATION SECTION BEGINS HERE -->
+    <div class="Education">
+        <h4>
+            EDUCATION
+        </h4>
+        <p id="date1">
+            ____2019-2023____
+        </p>
+        <p id="college">
+            Sinhgad College Of Engineering, Pune 
+            <a href="http://cms.sinhgad.edu/sinhgad_engineering_institutes/vadgaon_scoe/about.aspx" target="_blank">
+                <img border="0" alt="CodeChef" src="externallink.svg" width="15" height="15">
+            </a>
+        </p>
+        <p id="course">
+            BE in Information Technology 
+            <br>
+            CGPA - 7.88 (as of semester 2)
+        </p>
+        <br>
+        <p id="date1">
+            ____2018-2019____
+        </p>
+        <p id="college">
+            Macro Vision Academy, Burhanpur
+            <a href="https://www.mvaburhanpur.com/" target="_blank">
+                <img border="0" alt="CodeChef" src="externallink.svg" width="15" height="15">
+            </a>
+        </p>
+        <p id="course">
+            High School
+            <br>
+            Percentage - 85.50%
+        </p>
+    </div>
+    <hr>
+    <!-- EDUCATION SECTION ENDS HERE -->
+
+    
 </body>
 </html>
