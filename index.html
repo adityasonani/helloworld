@@ -130,11 +130,11 @@
                 }
             }
             .Skills li.HTML::after{
-                animation-name: HTML;
+                animation-name: HTML5;
             }
-            @keyframes HTML {
+            @keyframes HTML5 {
                 to{
-                    width: 70%;
+                    width: 80%;
                 }
             }
     /* SKILLS SECTION ENDS HERE */
@@ -198,6 +198,61 @@
             text-align: center;
         }
     /* PROJECTS SECTION ENDS HERE */
+
+    /* FOOTER SECTION STARTS HERE */
+        .Footer{
+            /* background-color: #8ee98b94; */
+            background-color: rgb(255, 255, 255);
+            max-width: 100%;
+            height:auto;
+            position: relative;
+            top:50%;
+            left: 0%;
+            overflow: hidden;
+            /*font-family: Roboto;*/ 
+        }
+        .lastone{
+            border-top: 25px solid  rgba(12, 12, 12, 0.705);
+            /*border-top: 25px solid  rgba(237, 241, 11, 0.623);*/
+            border-radius: 50px;
+        }
+        .Footer .addressfoot{
+            margin-left: 10%;
+            border-left: 8px solid #3CB371;
+            border-radius: 10px;
+            float: left;
+            font-family: "Times New Roman", Courier, monospace;
+        }
+        .Footer .numberfoot{
+            margin-right: 10%;
+            border-right: 8px solid #3CB371;
+            border-radius: 10px;
+            float: right;
+            font-family: "Times New Roman", Courier, monospace;
+        }
+
+    /* FOOTER SECTION ENDS HERE */
+        .topalign{
+            text-align: center;
+        }
+    /* COPYRIGHT SECTION STARTS HERE */
+        .Copyright{
+            /* background-color: #8ee98b94; */
+            background-color: rgb(255, 255, 255);
+            max-width: 100%;
+            height:auto;
+            position: relative;
+            top:50%;
+            left: 0%;
+            overflow: hidden;
+            /*font-family: Roboto;*/ 
+        }
+        .Copyright #developed{
+            position: relative;
+            margin: 50px 0;
+            text-align:center;
+        }
+    /* COPYRIGHT SECTION ENDS HERE */
         </style>
     </head>
 <body>
@@ -244,7 +299,7 @@
                 <li class="Cpp"> C/C++ </li>
                 <li class="Java"> JAVA </li>
                 <li class="Django"> DJANGO PYTHON </li>
-                <li class="HTML"> HTML/CSS </li>
+                <li class="HTML"> HTML5/CSS </li>
             </ul>
         </div>
     </div>
@@ -327,7 +382,44 @@
             </li> 
         </ul>
     </div>
-    <hr>
+    <br>
     <!-- PROJECTS SECTION ENDS HERE -->
+
+    <!-- FOOTER STARTS -->
+    <hr class="lastone">
+    <br>
+    <div class="Footer">
+        <p class="addressfoot"> &nbsp; Tanaji Ward No. 11 <br>
+            &nbsp; Shahpur, Burhanpur <br>
+            &nbsp; MP 450445
+        </p>
+        <p class="numberfoot">
+            <a href="mailto: adityasonani20@gmail.com" target="_blank" title="Mail" style="color: black; background-color:transparent;">
+                MAIL ME AT
+            </a>
+            <br>
+            adityasonani20@gmail.com &nbsp;
+            <br>
+            adityasonani19@gmail.com &nbsp;
+        </p>
+    </div>
+    <br>
+    <div class="topalign">
+        <a href="#"> 
+            <img border="0" alt="Top" src="arrowup.png" width="20" height="20">
+        </a>
+    </div>
+    <!-- FOOTER ENDS -->
+    <br>
+    <!-- COPYRIGHT STARTS -->
+    <div class="Copyright">
+        <p id="developed">
+            &copy; Developed By Aditya Sonani (2020-)
+            <br>
+            All Image(s) Copyright(s) To The Respective Owner(s)
+        </p>
+    </div>
+
+    <!-- COPYRIGHT ENDS -->
 </body>
 </html>
