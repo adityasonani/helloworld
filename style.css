@@ -1,15 +1,255 @@
 body
 {
-    background-image: url(background.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    margin: 0;
-	padding: 0;
-	font-family: sans-serif;
+    overflow: scroll;
+    margin: 10;
+    padding: 10;
+    font-family: Arial, Helvetica,"Times New Roman", sans-serif;
+    color: rgb(17, 17, 17);
+}
+html {
+    scroll-behavior: smooth;
+} 
+/* INTRO SECTION STARTS HERE */
+.Intro{
+    background-color: rgba(10, 103, 180, 0.24);
+    max-width: 100%;
+    height:auto;
+    position: relative;
+    top:50%;
+    left: 0%;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+.Intro h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(12, 2, 2);
+    text-align: center;
+}
+.Intro address{
+    position: relative;
+    text-align: center;
+}
+/* INTRO SECTION ENDS HERE */
+hr{
+    border-top: 2px solid  rgb(0, 0, 0);
+}
+/* SKILLS SECTION STARTS HERE */
+.Skills{
+    background-color: #EFE2BA;
+    max-width: 100%;
+    height:auto;
+    position: relative;
+    top:50%;
+    left: 0%;
+    overflow: hidden;
+    font-family: Roboto;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+.Skills #Skillsbar {
+    max-width: 500px;
+    height: auto;
+    margin: 10px auto 0;
+}
+.Skills h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(12, 2, 2);
+    text-align: center;
+}
+.Skills li{
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 550;
+}
+.Skills li:before{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: rgb(255, 166, 0, .5);
+    border-radius: 1000px;
+}
+.Skills li:after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 15px;
+    background-color: rgb(255, 166, 0, 1);
+    border-radius: 1000px;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.Skills li.Python::after{
+    animation-name: Python;
+}
+@keyframes Python {
+    to{
+        width: 95%;
+    }
+}
+.Skills li.Cpp::after{
+    animation-name: Cpp;
+}
+@keyframes Cpp {
+    to{
+        width: 85%;
+    }
+}
+.Skills li.Java::after{
+    animation-name: Java;
+}
+@keyframes Java {
+    to{
+        width: 65%;
+    }
+}
+.Skills li.Django::after{
+    animation-name: Django;
+}
+@keyframes Django {
+    to{
+        width: 60%;
+    }
+}
+.Skills li.HTML::after{
+    animation-name: HTML5;
+}
+@keyframes HTML5 {
+    to{
+        width: 80%;
+    }
+}
+/* SKILLS SECTION ENDS HERE */
+
+/* EDUCATION SECTION BEGINS HERE */
+.Education{
+    background-color: #8ee98b67;
+    /*ackground-color: rgba(233, 59, 117, 0.26);*/
+    max-width: 100%;
+    height:auto;
+    position: relative;
+    top:50%;
+    left: 0%;
+    overflow: hidden;
+    font-family: Roboto;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+.Education h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(12, 2, 2);
+    text-align: center;
+}
+.Education #date1{
+    position: relative;
+    margin: 10px 0;
+    text-align:center;
+}
+.Education #college{
+    position: relative;
+    margin: 10px 0;
+    text-align:center;
+    font-weight: 550;
+}
+.Education #course{
+    position: relative;
+    margin: 10px 0;
+    text-align: center;
+}
+/* EDUCATION SECTION ENDS HERE */
+
+/* PROJECTS SECTION BEGINS HERE */
+.Projects{
+    /* background-color: #8ee98b94; */
+    background-color: rgba(233, 59, 117, 0.26);
+    max-width: 100%;
+    height:auto;
+    position: relative;
+    top:50%;
+    left: 0%;
+    overflow: hidden;
+    font-family: Roboto; 
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+.Projects h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(12, 2, 2);
+    text-align: center;
+}
+.Projects li{
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    text-align: center;
+}
+/* PROJECTS SECTION ENDS HERE */
+
+/* FOOTER SECTION STARTS HERE */
+.Footer{
+    /* background-color: #8ee98b94; */
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+    height:auto;
+    position: relative;
+    top:50%;
+    left: 0%;
+    overflow: hidden;
+    /*font-family: Roboto;*/ 
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+.lastone{
+    border-top: 25px solid  rgba(12, 12, 12, 0.705);
+    /*border-top: 25px solid  rgba(237, 241, 11, 0.623);*/
+    border-radius: 50px;
+}
+.Footer .addressfoot{
+    margin-left: 10%;
+    border-left: 8px solid #3CB371;
+    border-radius: 10px;
+    float: left;
+    font-family: "Times New Roman", Courier, monospace;
+}
+.Footer .numberfoot{
+    margin-right: 10%;
+    border-right: 8px solid #3CB371;
+    border-radius: 10px;
+    float: right;
+    font-family: "Times New Roman", Courier, monospace;
 }
 
-.Intro{
-    position: absolute;
-    top:50%;
-	left: 50%;
+/* FOOTER SECTION ENDS HERE */
+.topalign{
+    text-align: center;
 }
+/* COPYRIGHT SECTION STARTS HERE */
+.Copyright{
+    /* background-color: #8ee98b94; */
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+    height:auto;
+    position: relative;
+    top:50%;
+    left: 0%;
+    overflow: hidden;
+    /*font-family: Roboto;*/ 
+}
+.Copyright #developed{
+    position: relative;
+    margin: 50px 0;
+    text-align:center;
+}
+/* COPYRIGHT SECTION ENDS HERE */
