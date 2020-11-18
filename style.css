@@ -251,5 +251,14 @@ hr{
     position: relative;
     margin: 50px 0;
     text-align:center;
+    margin-bottom: 10px;
+}
+#lastEle{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    font-size:10px; 
+    color:rgba(0, 0, 0, 0.5); 
+    text-align:center
 }
 /* COPYRIGHT SECTION ENDS HERE */
